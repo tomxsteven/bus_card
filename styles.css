@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #071108;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main.card {
+    min-width: 320px;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #6e9b3e;
+    border: 2px dashed red;
+}
+
+.dino-img {
+    width: 200px;
+}
