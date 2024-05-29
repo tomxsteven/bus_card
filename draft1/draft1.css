@@ -18,7 +18,8 @@ body {
 }
 
 .card {
-    width: 500px;
+    width: 90vw;
+    max-width: 500px;
     padding: 30px;
     display: flex;
     justify-content: space-around;
