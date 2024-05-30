@@ -30,7 +30,6 @@ main.card {
     background-size: 500% 500%;
     animation: shimmer 3s linear forwards;
     animation-play-state: paused;
-    border: 2px dashed red;
 }
 
 @keyframes shimmer {
@@ -53,12 +52,12 @@ main.card {
 
 .card:has(.dino-img:hover) {
   animation-play-state: running;
-  /* animation-iteration-count: ; */
+  animation-iteration-count: 1;
 }
 
-/* .card:not(:has(.dino-img:hover)) {
+.card:not(:has(.dino-img:hover)) {
   animation: none;
-} */
+}
   
 .name-header {
     font-size: 1.25em;
