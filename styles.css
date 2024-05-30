@@ -11,6 +11,7 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    color: #121212;
     background-color: #071108;
     display: flex;
     justify-content: center;
@@ -21,6 +22,7 @@ body {
 main.card {
     width: clamp(320px, 100vw, 320px);
     height: clamp(480px, 100vh, 480px);
+    transform: translateY(-5%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,7 +31,7 @@ main.card {
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
-    animation: shimmer 3s linear forwards;
+    animation: shimmer 1.5s linear forwards;
     animation-play-state: paused;
 }
 
@@ -61,10 +63,17 @@ main.card {
 }
   
 .name-header {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 .dino-img {
-  width: 225px;
+  width: 250px;
+  border: 3px solid #121212;
+  transform: translateY(-10%);
 }
 
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
