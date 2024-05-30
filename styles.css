@@ -27,8 +27,9 @@ main.card {
     align-items: center;
     text-align: center;
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
-    background-size: 400% 400%;
-    animation: shimmer 5s linear infinite;
+    background-size: 500% 500%;
+    animation: shimmer 3s linear forwards;
+    animation-play-state: paused;
     border: 2px dashed red;
 }
 
@@ -49,6 +50,15 @@ main.card {
         background-position: 100% 0%;
       }
 }
+
+.card:has(.dino-img:hover) {
+  animation-play-state: running;
+  /* animation-iteration-count: ; */
+}
+
+/* .card:not(:has(.dino-img:hover)) {
+  animation: none;
+} */
   
 .name-header {
     font-size: 1.25em;
@@ -57,3 +67,4 @@ main.card {
 .dino-img {
   width: 225px;
 }
+
