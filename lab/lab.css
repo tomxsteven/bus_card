@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: clamp(400px, 100vw, 400px);
+    height: clamp(300px, 100vh, 300px);
+    background: linear-gradient(45deg, red 0%, 35%, yellow 50%, 65%, blue 100%);
+}

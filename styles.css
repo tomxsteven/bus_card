@@ -19,15 +19,41 @@ body {
 }
 
 main.card {
-    min-width: 320px;
-    min-height: 480px;
+    width: clamp(320px, 100vw, 320px);
+    height: clamp(480px, 100vh, 480px);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
-    background-color: #6e9b3e;
+    background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
+    background-size: 400% 400%;
+    animation: shimmer 5s linear infinite;
     border: 2px dashed red;
 }
 
+@keyframes shimmer {
+    0% {
+      background-position: 100% 0%;
+    }
+    25% {
+      background-position: 50% 50%;
+    }
+    50% {
+      background-position: 0% 100%;
+    }
+    75% {
+        background-position: 50% 50%;
+      }
+    100% {
+        background-position: 100% 0%;
+      }
+}
+  
+.name-header {
+    font-size: 1.25em;
+}
+
 .dino-img {
-    width: 200px;
+  width: 225px;
 }
