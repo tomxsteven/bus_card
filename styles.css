@@ -25,9 +25,10 @@ main.card {
     transform: translateY(-5%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 20px;
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
@@ -61,19 +62,46 @@ main.card {
 .card:not(:has(.dino-img:hover)) {
   animation: none;
 }
-  
+
 .name-header {
-  font-size: 1.25em;
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+}
+  
+h1 {
+  font-size: 30px;
 }
 
 .dino-img {
   width: 250px;
   border: 3px solid #121212;
-  transform: translateY(-10%);
+  transform: translateY(-7px);
 }
 
 .info-footer {
+  height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: translateY(-15px);
 }
+
+.job-title h2 {
+  font-size: 26px;
+}
+
+.job-title {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+}
+
+.github,
+.gmail {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+}
+
