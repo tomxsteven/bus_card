@@ -36,6 +36,7 @@ main.card {
     animation-play-state: paused;
 }
 
+/* TRY: Animation without the loop back. */
 @keyframes shimmer {
     0% {
       background-position: 100% 0%;
@@ -70,7 +71,7 @@ main.card {
 }
   
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .dino-img {
