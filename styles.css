@@ -34,7 +34,7 @@ main.card {
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
-    animation: shimmer 1.25s linear forwards;
+    animation: shimmer 1.5s linear forwards;
     animation-fill-mode: forwards;
     /* animation-play-state: paused; */
 }
@@ -81,6 +81,27 @@ h1 {
   position: relative;
 }
 
+.dino-img {
+  width: 250px;
+  border: 3px solid #121212;
+  transform: translateY(-7px);
+}
+
+.chick-img {
+  width: 250px;
+  border: 3px solid #121212;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-7px);
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.avatar:active .chick-img {
+  opacity: 1;
+}
+
 .trans-butt {
   width: 250px;
   height: 250px;
@@ -90,12 +111,6 @@ h1 {
   transform: translate(-50%, -53.5%);
   background-color: transparent;
   border: none;
-}
-
-.dino-img {
-  width: 250px;
-  border: 3px solid #121212;
-  transform: translateY(-7px);
 }
 
 .info-footer {
