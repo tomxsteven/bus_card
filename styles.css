@@ -28,11 +28,13 @@ main.card {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 14px;
+    border: 6px solid #1c98bb;
+    border-radius: 25px;
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
-    animation: shimmer 1.5s linear forwards;
+    animation: shimmer 1.25s linear forwards;
     /* animation-play-state: paused; */
     /* animation-fill-mode: forwards; */
 }
@@ -56,12 +58,12 @@ main.card {
       }
 }
 
-.card:has(.dino-img:hover) {
+.card:has(.dino-img:active) {
   animation-play-state: running;
   animation-iteration-count: 1;
 }
 
-.card:not(:has(.dino-img:hover)) {
+.card:not(:has(.dino-img:active)) {
   animation: none;
 }
 
@@ -72,7 +74,7 @@ main.card {
 }
   
 h1 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 /* .avatar {
@@ -109,11 +111,28 @@ h1 {
   font-size: 26px;
 }
 
-.job-title {
+.job-title,
+.below-line {
   width: 262px;
   display: flex;
   justify-content: space-between;
+}
+
+.job-title {
   margin: 0 0 10px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: #121212;
+}
+
+.below-line {
+  flex-direction: column;
+  transform: translateY(12px);
 }
 
 .github,
