@@ -58,12 +58,12 @@ main.card {
       }
 }
 
-.card:has(.dino-img:active) {
+.card:has(.trans-butt:active) {
   animation-play-state: running;
   animation-iteration-count: 1;
 }
 
-.card:not(:has(.dino-img:active)) {
+.card:not(:has(.trans-butt:active)) {
   animation: none;
 }
 
@@ -77,21 +77,20 @@ h1 {
   font-size: 28px;
 }
 
-/* .avatar {
+.avatar {
   position: relative;
 }
 
-.trans-butt,
-.toggle {
+.trans-butt {
   width: 250px;
   height: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -53.5%);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
   border: none;
-} */
+}
 
 .dino-img {
   width: 250px;
@@ -139,6 +138,7 @@ hr {
 .gmail {
   width: 262px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
 }
 
