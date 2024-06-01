@@ -35,8 +35,8 @@ main.card {
     background-position: 100% 0%;
     background-size: 500% 500%;
     animation: shimmer 1.25s linear forwards;
+    animation-fill-mode: forwards;
     /* animation-play-state: paused; */
-    /* animation-fill-mode: forwards; */
 }
 
 /* TRY: Animation without the loop back. */
@@ -74,7 +74,7 @@ main.card {
 }
   
 h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /* .avatar {
