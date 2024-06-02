@@ -29,17 +29,15 @@ main.card {
     align-items: center;
     text-align: center;
     padding: 14px;
-    border: 6px solid #1c98bb;
+    border: 8px solid #1c98bb;
     border-radius: 25px;
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
     animation: shimmer 2s linear forwards;
     animation-fill-mode: forwards;
-    /* animation-play-state: paused; */
 }
 
-/* TRY: Animation without the loop back. */
 @keyframes shimmer {
     0% {
       background-position: 100% 0%;
@@ -87,9 +85,7 @@ h1 {
   transform: translateY(-7px);
 }
 
-/* FIX: Enlarge image to get rid of the blemish in the bottom right corner, possibly by vignetting which would better frame the bird and mask the bad crop near the feet. */
-
-.chick-img {
+.bird-img {
   width: 250px;
   border: 3px solid #121212;
   position: absolute;
@@ -100,7 +96,7 @@ h1 {
   transition: opacity 2s ease-in-out;
 }
 
-.avatar:active .chick-img {
+.avatar:active .bird-img {
   opacity: 1;
   transition: opacity 0s ease-in-out;
 }
