@@ -34,7 +34,7 @@ main.card {
     background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
     background-position: 100% 0%;
     background-size: 500% 500%;
-    animation: shimmer 1.5s linear forwards;
+    animation: shimmer 2s linear forwards;
     animation-fill-mode: forwards;
     /* animation-play-state: paused; */
 }
@@ -59,12 +59,12 @@ main.card {
 }
 
 .card:has(.trans-butt:active) {
-  animation-play-state: running;
-  animation-iteration-count: 1;
+  animation: none;
 }
 
 .card:not(:has(.trans-butt:active)) {
-  animation: none;
+  animation-play-state: running;
+  animation-iteration-count: 1;
 }
 
 .name-header {
@@ -87,6 +87,8 @@ h1 {
   transform: translateY(-7px);
 }
 
+/* FIX: Enlarge image to get rid of the blemish in the bottom right corner, possibly by vignetting which would better frame the bird and mask the bad crop near the feet. */
+
 .chick-img {
   width: 250px;
   border: 3px solid #121212;
@@ -95,11 +97,12 @@ h1 {
   left: 0;
   transform: translateY(-7px);
   opacity: 0;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .avatar:active .chick-img {
   opacity: 1;
+  transition: opacity 0s ease-in-out;
 }
 
 .trans-butt {
