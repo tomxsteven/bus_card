@@ -68,12 +68,12 @@ main.card {
   width: 262px;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
   
 h1 {
   font-size: 34px;
-  /* letter-spacing: 0.5px; */
+  letter-spacing: 0.75px;
 }
 
 .avatar {
@@ -123,7 +123,7 @@ h1 {
 
 .job-title h2 {
   font-size: 32px;
-  letter-spacing: 1.25px;
+  letter-spacing: 2px;
 }
 
 .job-title {
@@ -142,6 +142,10 @@ h1 {
   width: 262px;
   display: flex;
   justify-content: space-between;
+}
+
+.gmail {
+  transform: translateY(-2px);
 }
 
 .github h2,
