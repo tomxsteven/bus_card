@@ -72,8 +72,8 @@ main.card {
 }
   
 h1 {
-  font-size: 36px;
-  letter-spacing: 0.5px;
+  font-size: 34px;
+  /* letter-spacing: 0.5px; */
 }
 
 .avatar {
@@ -122,8 +122,8 @@ h1 {
 }
 
 .job-title h2 {
-  font-size: 30px;
-  /* letter-spacing: 0.25px; */
+  font-size: 32px;
+  letter-spacing: 1.25px;
 }
 
 .job-title {
