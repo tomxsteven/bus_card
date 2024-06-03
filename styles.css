@@ -100,7 +100,7 @@ h1 {
   transition: opacity 2s ease-in-out;
 }
 
-.avatar:active .bird-img {
+.trans-butt:active + .bird-img {
   opacity: 1;
   transition: opacity 0s ease-in-out;
 }
