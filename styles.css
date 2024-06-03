@@ -1,59 +1,58 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: #121212;
-    background-color: #071108;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: "Oswald", sans-serif;
+  color: #121212;
+  background-color: #071108;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 main.card {
-    width: clamp(320px, 100vw, 320px);
-    height: clamp(480px, 100vh, 480px);
-    transform: translateY(-5%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 14px;
-    border: 8px solid #1c98bb;
-    border-radius: 25px;
-    background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
-    background-position: 100% 0%;
-    background-size: 500% 500%;
-    animation: shimmer 2s linear forwards;
-    animation-fill-mode: forwards;
+  width: clamp(320px, 100vw, 320px);
+  height: clamp(480px, 100vh, 480px);
+  transform: translateY(-5%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 14px;
+  border: 8px solid #1c98bb;
+  border-radius: 25px;
+  background: linear-gradient(-135deg, #6e9b3e 0%, 40%, #8ab355 50%, #a4f041 60%, 65%, #8ab355 75%, #6e9b3e 100%);
+  background-position: 100% 0%;
+  background-size: 500% 500%;
+  animation: shimmer 2s linear forwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes shimmer {
-    0% {
-      background-position: 100% 0%;
-    }
-    25% {
+  0% {
+    background-position: 100% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  75% {
       background-position: 50% 50%;
     }
-    50% {
-      background-position: 0% 100%;
+  100% {
+      background-position: 100% 0%;
     }
-    75% {
-        background-position: 50% 50%;
-      }
-    100% {
-        background-position: 100% 0%;
-      }
 }
 
 .card:has(.trans-butt:active) {
@@ -69,10 +68,12 @@ main.card {
   width: 262px;
   display: flex;
   justify-content: space-between;
+  transform: translateY(-5px);
 }
   
 h1 {
-  font-size: 28px;
+  font-size: 36px;
+  letter-spacing: 1.5px;
 }
 
 .avatar {
@@ -121,38 +122,31 @@ h1 {
 }
 
 .job-title h2 {
-  font-size: 26px;
+  font-size: 30px;
+  letter-spacing: 0.75px;
 }
 
-.job-title,
-.below-line {
+.job-title {
   width: 262px;
   display: flex;
   justify-content: space-between;
 }
 
-.job-title {
-  margin: 0 0 10px;
-}
-
-hr {
-  border: none;
-  height: 3px;
-  width: 250px;
-  margin: 0 auto;
-  background-color: #121212;
-}
-
-.below-line {
+.below-job {
+  display: flex;
   flex-direction: column;
-  transform: translateY(12px);
 }
 
 .github,
 .gmail {
   width: 262px;
   display: flex;
-  justify-content: center;
-  gap: 5px;
+  justify-content: space-between;
+}
+
+.github h2,
+.gmail h2 {
+  font-size: 26px;
+  letter-spacing: 1.75px;
 }
 

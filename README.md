@@ -1,2 +1,6 @@
 # bus_card
-This is the Scrimba business card assignment.
+This project originated from the Scrimba Introduction to HTML and CSS course, specifically the Business Card Assignment. Amongst the project details, students were goaded into exploring and incorporating additional CSS enhancements beyond the concepts covered in the lessons.
+
+Here is the result of this creative instigation.
+
+Mind you, dear reader, I barely understood flex box before taking on this endeavor - which feels like years ago.
