@@ -3,4 +3,4 @@ This project originated from the Scrimba Introduction to HTML and CSS course, sp
 
 Here is the result of this creative instigation.
 
-Mind you, dear reader, I barely understood flex box before taking on this endeavor - which feels like years ago.
+Mind you, dear reader, I barely understood flex box before taking on this endeavor - which now feels like years ago.

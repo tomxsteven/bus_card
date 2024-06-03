@@ -73,7 +73,7 @@ main.card {
   
 h1 {
   font-size: 36px;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 
 .avatar {
@@ -123,7 +123,7 @@ h1 {
 
 .job-title h2 {
   font-size: 30px;
-  letter-spacing: 0.75px;
+  /* letter-spacing: 0.25px; */
 }
 
 .job-title {
@@ -147,6 +147,12 @@ h1 {
 .github h2,
 .gmail h2 {
   font-size: 26px;
+}
+
+.github h2 {
   letter-spacing: 1.75px;
 }
 
+.gmail h2 {
+  letter-spacing: 2.25px;
+}
