@@ -1,6 +1,6 @@
 # Business Business Business
-This project originated from the Scrimba Introduction to HTML and CSS course, specifically the Business Card Assignment. Amongst the project details, students were goaded into exploring and incorporating additional CSS enhancements beyond the concepts covered in the lessons.
+This project originated from the Scrimba [Learn HTML and CSS](https://v2.scrimba.com/learn-html-and-css-c0p) course, specifically the [Build a Digital Business Card](https://v2.scrimba.com/learn-html-and-css-c0p/~01u) section. Beyond the concepts covered in these lessons, students are encouraged to explore and incorporate additional CSS enhancements to their designs.
 
-Mind you, dear reader, I barely understood flex box before taking on this endeavor.
+Mind you, dear reader, I barely understood flex box before taking on this challenge.
 
-Here is the result of this creative instigation.
+And many hours later, here is the result of this creative instigation.
