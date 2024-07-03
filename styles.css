@@ -21,7 +21,7 @@ body {
   height: 100vh;
 }
 
-main.card {
+.card {
   width: clamp(320px, 100vw, 320px);
   height: clamp(480px, 100vh, 480px);
   transform: translateY(-5%);
@@ -51,10 +51,10 @@ main.card {
     background-position: 0% 100%;
   }
   75% {
-      background-position: 50% 50%;
+    background-position: 50% 50%;
     }
   100% {
-      background-position: 100% 0%;
+    background-position: 100% 0%;
     }
 }
 
@@ -89,6 +89,18 @@ h1 {
   transform: translateY(-7px);
 }
 
+.trans-butt {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -53.5%);
+  background-color: transparent;
+  border: none;
+}
+
 .bird-img {
   width: 250px;
   border: 3px solid #121212;
@@ -103,18 +115,6 @@ h1 {
 .trans-butt:active + .bird-img {
   opacity: 1;
   transition: opacity 0s ease-in-out;
-}
-
-.trans-butt {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -53.5%);
-  background-color: transparent;
-  border: none;
 }
 
 .info-footer {

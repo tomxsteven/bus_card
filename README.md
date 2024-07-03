@@ -3,4 +3,4 @@ This project originated from the Scrimba [Learn HTML and CSS](https://v2.scrimba
 
 Mind you, dear reader, I barely understood flex box before taking on this challenge.
 
-And many hours later, here is the result of this creative instigation.
+And many hours later, here are the results of this creative instigation.
